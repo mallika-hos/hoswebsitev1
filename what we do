@@ -1,0 +1,105 @@
+<!--
+  "WHAT WE DO" SECTION — House of Six
+  Self-contained excerpt: paste the <style> block into your site's CSS
+  (or a <style> tag), and the <section> markup where you want it to appear.
+
+  Requires these fonts loaded on the page (Google Fonts):
+  https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap
+-->
+
+<style>
+  /* Color variables used by this section — add these once, site-wide */
+  :root{
+    --ink:#1c1a17;
+    --ivory:#f3eee6;
+    --stone:#b9ad9a;
+    --brass:#ad8a4e;
+    --line: rgba(243,238,230,0.14);
+  }
+
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 40px; }
+  .eyebrow{
+    font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase;
+    color:var(--brass); font-weight:500; font-family:'Inter', sans-serif;
+  }
+
+  /* WHAT WE DO */
+  .offerings{ background:#18140f; padding:130px 0; color:var(--ivory); font-family:'Inter', sans-serif; font-weight:300; }
+  .offerings .eyebrow{ color:var(--brass); }
+  .offerings-head{ margin-bottom:56px; max-width:60ch; }
+  .offerings-head h2{
+    font-family:'Fraunces', serif; font-weight:450;
+    font-size:clamp(1.8rem,3vw,2.6rem); margin-top:10px;
+  }
+  .offerings-head p{ color:var(--stone); margin-top:16px; font-size:1rem; }
+  .offer-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+  .offer-card{
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:42px 34px;
+    min-height:210px;
+    display:flex; flex-direction:column; justify-content:space-between;
+    transition: background 0.3s ease;
+    text-decoration:none;
+    color:inherit;
+  }
+  .offer-card:hover{ background:rgba(243,238,230,0.03); }
+  .offer-num{ font-size:0.75rem; color:var(--brass); letter-spacing:0.12em; text-transform:uppercase; }
+  .offer-card h3{ font-family:'Fraunces', serif; font-weight:450; font-size:1.35rem; margin-top:28px; }
+  .offer-card .tag{ font-size:0.88rem; color:var(--stone); margin-top:8px; line-height:1.5; }
+  .offer-card .go{
+    font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase;
+    margin-top:18px; color:var(--brass);
+    opacity:0; transform:translateY(4px); transition:all 0.25s ease;
+  }
+  .offer-card:hover .go{ opacity:1; transform:translateY(0); }
+  @media(max-width:860px){ .offer-grid{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:560px){ .offer-grid{ grid-template-columns:1fr; } }
+</style>
+
+<section class="offerings" id="what-we-do">
+  <div class="wrap">
+    <div class="offerings-head">
+      <p class="eyebrow">What We Do</p>
+      <h2>One brand. Six ways in.</h2>
+      <p>House of Six designs classic, designer-quality accessories for every sense of home, priced so quality is never the exception. Each category below is one way in.</p>
+    </div>
+    <div class="offer-grid">
+      <a class="offer-card" href="https://shop.houseofsix.com/sight" target="_blank" rel="noopener">
+        <span class="offer-num">01 · Sight</span>
+        <div><h3>Objects &amp; Décor</h3><p class="tag">Vases, sculptural pieces, and small objects for shelves and tables.</p></div>
+        <span class="go">Shop the edit →</span>
+      </a>
+      <a class="offer-card" href="https://shop.houseofsix.com/scent" target="_blank" rel="noopener">
+        <span class="offer-num">02 · Scent</span>
+        <div><h3>Home Fragrance</h3><p class="tag">Candles and diffusers, chosen to change how a room feels.</p></div>
+        <span class="go">Shop the edit →</span>
+      </a>
+      <a class="offer-card" href="https://shop.houseofsix.com/taste" target="_blank" rel="noopener">
+        <span class="offer-num">03 · Taste</span>
+        <div><h3>Kitchen</h3><p class="tag">Bowls, trays, aprons, and oven mitts in silver, gold, rose gold, and antique.</p></div>
+        <span class="go">Shop the edit →</span>
+      </a>
+      <a class="offer-card" href="https://shop.houseofsix.com/touch" target="_blank" rel="noopener">
+        <span class="offer-num">04 · Touch</span>
+        <div><h3>Textiles</h3><p class="tag">Throws and textured pieces for the rooms you spend the most time in.</p></div>
+        <span class="go">Shop the edit →</span>
+      </a>
+      <a class="offer-card" href="https://shop.houseofsix.com/sound" target="_blank" rel="noopener">
+        <span class="offer-num">05 · Sound</span>
+        <div><h3>Ambient Pieces</h3><p class="tag">Small objects that shape the quiet of a room, not just the look of it.</p></div>
+        <span class="go">Shop the edit →</span>
+      </a>
+      <a class="offer-card" href="https://shop.houseofsix.com/styling" target="_blank" rel="noopener">
+        <span class="offer-num">06 · The Sixth Sense</span>
+        <div><h3>Styling &amp; Curation</h3><p class="tag">Seasonal edits and gifting sets, put together for you.</p></div>
+        <span class="go">Shop the edit →</span>
+      </a>
+    </div>
+  </div>
+</section>
